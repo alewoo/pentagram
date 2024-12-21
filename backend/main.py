@@ -52,6 +52,7 @@ class Model:
         )
         self.pipe.to("cuda") #nvidia cuda is their software stack
         self.API_KEY = os.environ["API_KEY"]
+        print("Loaded API Key:", self.API_KEY)
 
     # create our modal endpoint (api endpoint that we query from our nextjs app in the backend)
     @modal.web_endpoint()

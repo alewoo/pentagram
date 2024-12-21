@@ -10,7 +10,8 @@ export async function POST(request: Request) {
 
     // TODO: Call your Image Generation API here
     // For now, we'll just echo back the text
-    console.log(text);
+    console.log("API key from env (length):", process.env.API_KEY?.length);
+    console.log("API key from env (value):", process.env.API_KEY);
 
     const url = new URL(
       "https://alexwang409--sd-demo-model-generate.modal.run"
