@@ -8,20 +8,30 @@ export async function POST(request: Request) {
     const body = await request.json(); // extracts json data from frontend
     const { text } = body; // pulls out text property from the request body
 
+    const apiSecret = request.headers.get("X-API-SECRET");
+
+    if (apiSecret !== process.env.API_SECRET) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     // TODO: Call your Image Generation API here
     // For now, we'll just echo back the text
     console.log("API key from env (length):", process.env.API_KEY?.length);
-    console.log("API key from env (value):", process.env.API_KEY);
+    // console.log("API key from env (value):", process.env.API_KEY);
 
-    const url = new URL(
-      "https://alexwang409--sd-demo-model-generate.modal.run"
-    );
+    const modalUrl = process.env.MODAL_URL;
+
+    if (!modalUrl) {
+      throw new Error("MODAL_URL is not defined in the environment variables.");
+    }
+
+    const url = new URL(modalUrl);
 
     url.searchParams.set("prompt", text); // security reasons
 
     console.log("Requesting URl:", url.toString());
 
-    // console.log("AKI Key:", process.env.API_KEY);
+    // console.log("API Key:", process.env.API_KEY);
 
     // create a fetch request
     const response = await fetch(url.toString(), {

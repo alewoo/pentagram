@@ -48,7 +48,7 @@ class Model:
         self.pipe = AutoPipelineForText2Image.from_pretrained(
             "stabilityai/sdxl-turbo", 
             torch_dtype=torch.float16,
-            variant="fp16"
+            variant="fp16" # can also use fp8 (8 bit)
         )
         self.pipe.to("cuda") #nvidia cuda is their software stack
         self.API_KEY = os.environ["API_KEY"]
