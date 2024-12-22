@@ -44,3 +44,6 @@ next-env.d.ts
 
 h.pdf
 notes.pdf
+
+# venv
+/venv
