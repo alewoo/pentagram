@@ -6,6 +6,8 @@
 
 Pentagram is a modern web application that reimagines Instagram with AI-powered image generation capabilities. Create, share, and explore AI-generated images in a familiar social media interface.
 
+<img width="1670" alt="image" src="https://github.com/user-attachments/assets/2bac8d0e-2180-467b-bb5f-e28bb2db13a3" />
+
 ## ✨ Features
 
 - 🎨 AI-powered image generation from text prompts
