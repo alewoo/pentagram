@@ -1,46 +1,76 @@
-# Pentagram: Instagram, but with AI Images
+# 🖼️ Pentagram
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-13-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![AI Powered](https://img.shields.io/badge/AI-Powered-purple)](https://openai.com)
 
-First, clone the GitHub repository:
+Pentagram is a modern web application that reimagines Instagram with AI-powered image generation capabilities. Create, share, and explore AI-generated images in a familiar social media interface.
 
-```bash
-git clone https://github.com/team-headstart/pentagram.git
-```
+## ✨ Features
 
-Then, navigate to the project directory:
+- 🎨 AI-powered image generation from text prompts
+- 📱 Responsive, modern UI built with Next.js
+- 🚀 Fast and efficient image processing
+- 💫 Real-time updates and interactions
 
-```bash
-cd pentagram
-```
+## 🛠️ Tech Stack
 
-Then, install the dependencies:
+- **Frontend**: Next.js 13, TypeScript, TailwindCSS
+- **Backend**: Modal for AI image generation
+- **Deployment**: Vercel
 
-```bash
-npm install
-```
+## 🚀 Getting Started
 
-Run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-```
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-## Tasks
+1. Clone the repository:
 
-- Take a look at the TODOs in the repo, namely:
+   ```bash
+   git clone https://github.com/alewoo/pentagram.git
+   cd pentagram
+   ```
 
-    - `src/app/page.tsx`: This is where the user can input their prompt and generate an image. Make sure to update the UI and handle the API response to display the images generated
+2. Install dependencies:
 
-    - `src/app/api/generate-image/route.ts`: This is where the image generation API is implemented. Make sure to call your image generation API from Modal here
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+3. Run the development server:
 
-## Learn More
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-# pentagram
+## 🔧 Development
+
+The project structure is organized as follows:
+
+- `src/app/page.tsx`: Main page component for prompt input and image generation
+- `src/app/api/generate-image/route.ts`: API route for image generation
+- Additional components and utilities in their respective directories
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
+- [Learn Next.js](https://nextjs.org/learn) - Interactive Next.js tutorial
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
